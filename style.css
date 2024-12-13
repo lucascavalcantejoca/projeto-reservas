@@ -93,9 +93,9 @@ input[type="text"] {
 @media only screen and (min-width: 501px) and (max-width:1920px) {
 
     .cont_geral {
-        display: flex;
-        justify-content: space-between;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 32vw;
     }
 
     #agendamento {
@@ -104,7 +104,11 @@ input[type="text"] {
         text-align: center;
         border-radius: 15px;
         padding: 25px;
-        height: 91vh;
+        height: 92vh;
+    }
+
+    h1 {
+        margin-top: 30px;
     }
 
     .selecionar_data {
@@ -117,6 +121,14 @@ input[type="text"] {
         
     }
 
+    .ca1, .ca3 {
+        text-align: left;
+    }
+
+    .ca1 {
+        text-indent: 18px;
+    }
+
     .ca2 {
         grid-row: 2;
     }
@@ -126,7 +138,6 @@ input[type="text"] {
         text-indent: .7em;
     }
 
-
     input[type="date"]::-webkit-calendar-picker-indicator {
         position: absolute;
         
@@ -134,8 +145,15 @@ input[type="text"] {
 
     .horarios , .turnos {
         text-align: left;
-        text-indent: 35px;
-        line-height: 35px;
+        line-height: 40px;
+    }
+
+    .horarios {
+        margin-top: 20px;
+    }
+
+    .turnos {
+        color: var(--baseB1);
     }
 
     .calendario { 
@@ -153,8 +171,32 @@ input[type="text"] {
         
     }
 
-    .c2, .c3 {
-        margin-top: 20px;
+    .grid-item {
+        cursor: pointer;
+    }
+
+    .container_btn {
+        margin-top: 260px;
+    }
+
+    .btn {
+        padding: 20px;
+        width: 80%;
+    }
+
+    #agendamentos {
+        margin-top: 40px;
+        margin-left: 15em;
+    }
+
+    .ver_reservas {
+        margin: 20px 0px 5px 0px;
+        color: var(--baseB3);
+    }
+
+    .c1, .c2, .c3 {
+        margin-top: 10px;
+        width: 50vw;
     }
 
     .section { 
@@ -168,15 +210,6 @@ input[type="text"] {
     .cabecalho {
         display: flex;
         justify-content: space-between;
-    }
-
-    .container_btn {
-        margin-top: 350px;
-    }
-
-    .btn {
-        padding: 20px;
-        width: 80%;
     }
 
     .p1 {
