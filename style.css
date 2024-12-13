@@ -104,6 +104,7 @@ input[type="text"] {
         text-align: center;
         border-radius: 15px;
         padding: 25px;
+        height: 91vh;
     }
 
     .selecionar_data {
@@ -131,6 +132,12 @@ input[type="text"] {
         
     }
 
+    .horarios , .turnos {
+        text-align: left;
+        text-indent: 35px;
+        line-height: 35px;
+    }
+
     .calendario { 
         
         border: 1px solid var(--baseB3);
@@ -138,12 +145,16 @@ input[type="text"] {
         margin: auto;
     }
 
-    .c2, .c3 {
-        margin-top: 30px;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 28em;
+        justify-self: center;
+        
     }
 
-    .c3 {
-        margin-bottom: 30px;
+    .c2, .c3 {
+        margin-top: 20px;
     }
 
     .section { 
@@ -157,6 +168,15 @@ input[type="text"] {
     .cabecalho {
         display: flex;
         justify-content: space-between;
+    }
+
+    .container_btn {
+        margin-top: 350px;
+    }
+
+    .btn {
+        padding: 20px;
+        width: 80%;
     }
 
     .p1 {
@@ -249,7 +269,6 @@ input[type="text"] {
     .grid-item {
         cursor: pointer;
     }
-
 
     .container_btn {
         text-align: center;
