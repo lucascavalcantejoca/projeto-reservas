@@ -29,13 +29,6 @@ body {
     font-family: Catamaran, sans-serif;
 }
 
-#agendamento {
-    
-
-
-}
-
-
 input{
     background-color: var(--baseP1);
     color: var(--baseB0);
@@ -83,9 +76,12 @@ input[type="text"] {
     background-color: var(--produto1);
     padding: 10px;
     border-radius: 10px;
-    border: none;
+    border: 2px solid;
     transition-duration: .2s;
     font-family: Catamaran, sans-serif;
+    color: #050505;
+    font-weight: bolder;
+    cursor: pointer;
     
 }
 
@@ -94,148 +90,238 @@ input[type="text"] {
 
 }
 
+@media only screen and (min-width: 501px) and (max-width:1920px) {
+
+    .cont_geral {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    #agendamento {
+        margin: 15px;
+        background-color: var(--baseP1);
+        text-align: center;
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    .selecionar_data {
+        color: var(--baseB3);
+    }
+
+    .campos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .ca2 {
+        grid-row: 2;
+    }
+
+    input[type="date"] {
+        width: 150px;
+        text-indent: .7em;
+    }
+
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        
+    }
+
+    .calendario { 
+        
+        border: 1px solid var(--baseB3);
+        border-radius: 10px; 
+        margin: auto;
+    }
+
+    .c2, .c3 {
+        margin-top: 30px;
+    }
+
+    .c3 {
+        margin-bottom: 30px;
+    }
+
+    .section { 
+        padding: 20px; 
+    }
+
+    .s1, .s2, .s3 {
+        border-bottom: 1px solid var(--baseB3);
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .p1 {
+        background: url('sun-horizon.svg') no-repeat left;
+        background-size: contain;
+        text-indent: 33px;
+    }
+
+    .p2 {
+        background: url('cloud-sun.svg') no-repeat left;
+        background-size: contain;
+        text-indent: 33px;
+    }
+
+    .p3 {
+        background: url('moon-stars.svg') no-repeat left;
+        background-size: contain;
+        text-indent: 33px;
+
+    }
+
+    .agendados { 
+        line-height: 40px;
+    }
+
+    .pp {
+        background: url('x.svg') no-repeat right;
+        background-size: 30px;
+        margin-right: 6px;
+        
+    }
+
+}
+
 
 @media only screen and (max-width: 500px) {
 
-h1 {
-    text-align: center;
-    font-size: 1.8em;
-    margin-top: .35em;
+    h1 {
+        text-align: center;
+        font-size: 1.8em;
+        margin-top: .35em;
+    }
+
+    .selecionar_data, .ver_reservas {
+        text-align: center;
+        font-size: 1em;
+        color: var(--baseB2);
+    }
+    .campos, .data2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3px;
+        margin-left: 15px;
+        
+    }
+
+    input[type="date"] {
+        width: 83.8vw;
+        text-indent: .7em;
+    }
+
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        
+    }
+
+    input[type="text"] {
+        width: 79vw;
+    }
+
+    .horarios {
+        margin: 1.2em 0px 0px 15px;
+        font-size: 1.1em;
+    }
+
+    .turnos {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 22.5em;
+        justify-self: center;
+        
+    }
+
+    .grid-item {
+        cursor: pointer;
+    }
+
+
+    .container_btn {
+        text-align: center;
+        padding: 15px;
+        
+    }
+
+    .btn {
+        width: 85vw;
+        
+    }
+
+    .data2 {
+        margin-bottom: 100px;
+    }
+
+    .calendario { 
+        width: 80vw; 
+        border: 1px solid var(--baseB3);
+        border-radius: 10px; 
+        margin: auto;
+    }
+
+    .c2, .c3 {
+        margin-top: 30px;
+    }
+
+    .c3 {
+        margin-bottom: 30px;
+    }
+
+    .section { 
+        padding: 20px; 
+    }
+
+    .s1, .s2, .s3 {
+        border-bottom: 1px solid var(--baseB3);
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .p1 {
+        background: url('sun-horizon.svg') no-repeat left;
+        background-size: contain;
+        text-indent: 33px;
+    }
+
+    .p2 {
+        background: url('cloud-sun.svg') no-repeat left;
+        background-size: contain;
+        text-indent: 33px;
+    }
+
+    .p3 {
+        background: url('moon-stars.svg') no-repeat left;
+        background-size: contain;
+        text-indent: 33px;
+
+    }
+
+    .agendados { 
+        line-height: 40px;
+    }
+
+    .pp {
+        background: url('x.svg') no-repeat right;
+        background-size: 30px;
+        margin-right: 6px;
+        
+    }
 }
 
-.selecionar_data, .ver_reservas {
-    text-align: center;
-    font-size: 1em;
-    color: var(--baseB2);
-}
-.campos, .data2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3px;
-    margin-left: 15px;
-    
-}
-
-input[type="date"] {
-    width: 83.8vw;
-    text-indent: .7em;
-}
-
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    position: absolute;
-    
-}
-
-input[type="text"] {
-    width: 79vw;
-}
-
-.horarios {
-    margin: 1.2em 0px 0px 15px;
-    font-size: 1.1em;
-}
-
-.turnos {
-    text-align: center;
-    padding: 10px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 22.5em;
-    justify-self: center;
-    
-}
-
-.grid-item {
-    cursor: pointer;
-}
-
-
-.container_btn {
-    text-align: center;
-    padding: 15px;
-    
-}
-
-.btn {
-    width: 85vw;
-    color: #050505;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-.data2 {
-    margin-bottom: 100px;
-}
-
-.calendario { 
-    width: 80vw; 
-    border: 1px solid var(--baseB3);
-    border-radius: 10px; 
-    margin: auto;
-}
-
-.c2, .c3 {
-    margin-top: 30px;
-}
-
-.c3 {
-    margin-bottom: 30px;
-}
-
-.section { 
-    padding: 20px; 
-}
-
-.s1, .s2, .s3 {
-    border-bottom: 1px solid var(--baseB3);
-}
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.p1 {
-    background: url('sun-horizon.svg') no-repeat left;
-    background-size: contain;
-    text-indent: 33px;
-}
-
-.p2 {
-    background: url('cloud-sun.svg') no-repeat left;
-    background-size: contain;
-    text-indent: 33px;
-}
-
-.p3 {
-    background: url('moon-stars.svg') no-repeat left;
-    background-size: contain;
-    text-indent: 33px;
-
-}
-
-.agendados { 
-    line-height: 40px;
-}
-
-.pp {
-    background: url('x.svg') no-repeat right;
-    background-size: 30px;
-    margin-right: 6px;
-    
-}
-
-
-
-    
-}
-
-@media only screen and (max-width: 768px) {
-
-}
