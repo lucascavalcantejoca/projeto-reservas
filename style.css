@@ -56,20 +56,15 @@ input[type="text"] {
 
 
 .container {
-    display: grid;
-    /*grid-template-columns: 1fr 1fr;*/
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 15px 0px;
     
 }
 
 .grid-item {
-    background-color: var(--baseP0);
     text-align: center;
     padding: 5px;
-    border-radius: 5px;
-    border: 1px solid var(--baseB4);
-
 }
 
 .btn {
@@ -118,7 +113,6 @@ input[type="text"] {
     .campos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
     }
 
     .ca1, .ca3 {
@@ -154,10 +148,14 @@ input[type="text"] {
 
     .turnos {
         color: var(--baseB1);
+        text-indent: 8px;
+    }
+
+    .t2, .t3 {
+        margin-top: 10px;
     }
 
     .calendario { 
-        
         border: 1px solid var(--baseB3);
         border-radius: 10px; 
         margin: auto;
@@ -166,13 +164,35 @@ input[type="text"] {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 28em;
         justify-self: center;
-        
+        width: 28em;
     }
 
     .grid-item {
         cursor: pointer;
+    }
+
+    .time-button { 
+        padding: 8px 30px;
+        border: 1px solid var(--baseB4);
+        border-radius: 5px;
+        cursor: pointer;
+        transition-duration: .2s;
+        background-color: var(--baseP0);
+        color: var(--baseB0);
+        
+    }
+
+    .time-button:hover {
+        background-color: var(--baseB4);
+    }
+
+    .checkbox { 
+        display: none; 
+    } 
+
+    .checkbox:checked + .time-button { 
+        background-color: #333; color: #ffc107; border: 1px solid #ffc107; 
     }
 
     .container_btn {
@@ -242,6 +262,8 @@ input[type="text"] {
         
     }
 
+ 
+    
 }
 
 
