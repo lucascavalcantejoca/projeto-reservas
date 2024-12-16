@@ -197,7 +197,7 @@ input[type="text"] {
         background-color: var(--baseP1);
         cursor: default;
     }
-    
+
     .checkbox { 
         display: none; 
     } 
@@ -368,6 +368,7 @@ input[type="text"] {
         font-size: 1em;
         color: var(--baseB2);
     }
+
     .campos, .data2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -409,8 +410,37 @@ input[type="text"] {
         
     }
 
-    .grid-item {
+    .time-button { 
+        padding: 9px 20px;
+        border: 1px solid var(--baseB4);
+        border-radius: 5px;
         cursor: pointer;
+        transition-duration: .2s;
+        background-color: var(--baseP0);
+        color: var(--baseB0);
+        
+    }
+
+    .tb {
+        background-color: var(--baseP1);
+        color: var(--baseB4);
+    }
+
+    .time-button:hover {
+        background-color: var(--baseB4);
+    }
+
+    .tb:hover {
+        background-color: var(--baseP1);
+        cursor: default;
+    }
+    
+    .checkbox { 
+        display: none; 
+    } 
+
+    .checkbox:checked + .time-button { 
+        background-color: #333; color: #ffc107; border: 1px solid #ffc107; 
     }
 
     .container_btn {
