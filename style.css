@@ -85,6 +85,7 @@ input[type="text"] {
 
 }
 
+
 @media only screen and (min-width: 501px) and (max-width:1920px) {
 
     .cont_geral {
@@ -99,7 +100,7 @@ input[type="text"] {
         text-align: center;
         border-radius: 15px;
         padding: 25px;
-        height: 92vh;
+        height: 91.5vh;
     }
 
     h1 {
@@ -183,10 +184,20 @@ input[type="text"] {
         
     }
 
+    .tb {
+        background-color: var(--baseP1);
+        color: var(--baseB4);
+    }
+
     .time-button:hover {
         background-color: var(--baseB4);
     }
 
+    .tb:hover {
+        background-color: var(--baseP1);
+        cursor: default;
+    }
+    
     .checkbox { 
         display: none; 
     } 
@@ -261,11 +272,88 @@ input[type="text"] {
         margin-right: 6px;
         
     }
-
- 
-    
 }
 
+@media only screen and (min-width: 1600px) and (max-width: 1600px) and (min-height: 900px) and (max-height: 900px) {
+   
+    #agendamento {
+        height: 91vh;
+    }
+
+    .container_btn {
+        margin-top: 140px;
+    }
+
+    .btn {
+        padding: 20px;
+    }
+
+    .ver_reservas {
+        margin: 15px 0px 5px 0px;
+    }
+
+    .c1, .c2, .c3 {
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (min-height: 768px) and (max-height: 768px) {
+   
+    #agendamento {
+        height: 89vh;
+    }
+
+    .container_btn {
+        margin-top: 40px;
+    }
+
+    .btn {
+        padding: 15px;
+    }
+
+    #agendamentos {
+        margin-top: -15px;
+    }
+
+    .ver_reservas {
+        margin: 5px 0px 0px 0px;
+    }
+
+    .c1, .c2, .c3 {
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 720px) and (max-height: 720px) {
+   
+    #agendamento {
+        height: 88.9vh;
+    }
+
+    .container_btn {
+        margin-top: 23px;
+    }
+
+    .btn {
+        padding: 12px;
+    }
+
+    #agendamentos {
+        margin-top: -15px;
+    }
+
+    .ver_reservas {
+        margin: 5px 0px 0px 0px;
+    }
+
+    .c1, .c2, .c3 {
+        width: 37vw;
+    }
+
+    .section {
+        padding: 17px;
+    }
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -398,4 +486,3 @@ input[type="text"] {
         
     }
 }
-
