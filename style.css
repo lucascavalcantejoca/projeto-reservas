@@ -71,7 +71,7 @@ input[type="text"] {
     background-color: var(--produto1);
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid;
+    border: 2px solid transparent;
     transition-duration: .2s;
     font-family: Catamaran, sans-serif;
     color: #050505;
@@ -207,12 +207,13 @@ input[type="text"] {
     }
 
     .container_btn {
-        margin-top: 260px;
+        margin-top: 19vh;
     }
 
     .btn {
         padding: 20px;
         width: 80%;
+
     }
 
     #agendamentos {
@@ -382,7 +383,6 @@ input[type="text"] {
         text-indent: .7em;
     }
 
-
     input[type="date"]::-webkit-calendar-picker-indicator {
         position: absolute;
         
@@ -411,14 +411,13 @@ input[type="text"] {
     }
 
     .time-button { 
-        padding: 9px 20px;
+        padding: 9px 17px;
         border: 1px solid var(--baseB4);
         border-radius: 5px;
         cursor: pointer;
         transition-duration: .2s;
         background-color: var(--baseP0);
         color: var(--baseB0);
-        
     }
 
     .tb {
