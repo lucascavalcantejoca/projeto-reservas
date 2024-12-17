@@ -40,7 +40,7 @@ input{
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url('calendar-blank.svg') no-repeat left;
+    background: url('icons/calendar-blank.svg') no-repeat left;
     background-size: contain;
     cursor: pointer;
     
@@ -48,7 +48,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 input[type="text"] {
-    background: url('user-rectangle.svg') no-repeat left;
+    background: url('icons/user-rectangle.svg') no-repeat left;
     background-size: 1.8em;
     padding-left: 1.9em;
     
@@ -135,7 +135,6 @@ input[type="text"] {
 
     input[type="date"]::-webkit-calendar-picker-indicator {
         position: absolute;
-        
     }
 
     .horarios , .turnos {
@@ -245,19 +244,19 @@ input[type="text"] {
     }
 
     .p1 {
-        background: url('sun-horizon.svg') no-repeat left;
+        background: url('icons/sun-horizon.svg') no-repeat left;
         background-size: contain;
         text-indent: 33px;
     }
 
     .p2 {
-        background: url('cloud-sun.svg') no-repeat left;
+        background: url('icons/cloud-sun.svg') no-repeat left;
         background-size: contain;
         text-indent: 33px;
     }
 
     .p3 {
-        background: url('moon-stars.svg') no-repeat left;
+        background: url('icons/moon-stars.svg') no-repeat left;
         background-size: contain;
         text-indent: 33px;
 
@@ -268,7 +267,7 @@ input[type="text"] {
     }
 
     .pp {
-        background: url('x.svg') no-repeat right;
+        background: url('icons/x.svg') no-repeat right;
         background-size: 30px;
         margin-right: 6px;
         
